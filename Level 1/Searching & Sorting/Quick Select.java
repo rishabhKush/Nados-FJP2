@@ -15,8 +15,9 @@ public class Main {
     if(pivotIdx == k)return arr[pivotIdx];
     
     if(pivotIdx < k)
+        //this return gets executed if < k
       return quickSelect(arr,pivotIdx+1,hi, k);
-    
+        //this return gets executed if > k    
       return quickSelect(arr, lo, pivotIdx-1, k) ;
   
     
